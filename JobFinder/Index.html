@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Style.css">
+    <title>JobFindr</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body id="body" onscroll="onScroll()" class="">
+  <div class="container">
+    <header>
+        <nav id="navigation" class="">
+            <a href="#home" class="logo">
+                <img src="/img/logo.png" alt="Logo da empresa JobFindr" width="50px">
+            </a>
+            <ul>
+                <li><a href="#Vagas">Encontrar vaga</a></li>
+                <li><a href="#send-vagas">Enviar vaga</a></li>
+                <li><a href="#footer-bottom">Contato</a></li>
+            </ul>
+            <button onclick="openMenu()" class="open-menu">
+                <img src="https://cdn3.iconfinder.com/data/icons/minimal-website-ui-kit/100/ld_menu_closed-512.png" alt="menu" width="50px">
+            </button>
+            <button onclick="closeMenu()" class="close-menu">
+                <img src="https://cdn.onlinewebfonts.com/svg/img_419410.png" alt="Voltar" width="50px">
+            </button>
+            <div class="menu">
+                <ul>
+                   <li><a onclick="closeMenu()" href="#Vagas">Ultimas vagas</a></li>
+                   <li><a onclick="closeMenu()" href="#stats">Estatisticas</a></li>
+                   <li><a onclick="closeMenu()" href="#blog">Nosso blog</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#">
+                        <img src="/img/logo-instagram.png" alt="Logo Instagram" width="85px">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="/img/logo-fecebook1.png" alt="Logo Facebook" width="85px">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="/img/logo-linkedin.png" alt="Logo Linkedin" width="85px">
+                    </a></li>
+                </ul>
+                <a href="#" class="button-menu">Entre em contato</a>
+            </div>
+         </nav>
+    </header>
+    <main>
+        <div id="home" class="Busca">
+            <h2>A maneira mais fácil de encontrar seu novo emprego</h2>
+            <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
+            <form>
+                <input type="text" id="text" placeholder="Digite o cargo">
+                <select name="Todos os estados" id="Todos os Estados">
+                    <option>Todoso os Estados</option>
+                </select>
+                <select name="Categoria" id="Categoria">
+                    <option>Categoria</option>
+                </select>
+                <input type="submit" value="Pesquisar" id="botao">
+            </form>
+        </div>
+    </main>
+
+    <div id="Vagas" class="container-wrapper">
+        <div class="wrapper">
+            <h2>Últimas vagas enviadas</h2>
+            <ul>
+                <li><a href="#" class="clickarea">
+                    <div class="company-box">
+                        <img src="/img/googlelogo.png" alt="logo do google">
+                        <div class="info">
+                            <h5>Developer</h5>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                    <div class="locality-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mountain View, California</p>
+                    </div>
+                    <div class="type-vaga">
+                        <span class="clt">CLT</span>
+                    </div>
+                </a></li>
+                <li><a href="#" class="clickarea">
+                    <div class="company-box">
+                        <img src="/img/ibmlogo.png" alt="logo da ibm">
+                        <div class="info">
+                            <h5>DBA</h5>
+                            <p>IBM</p>
+                        </div>
+                    </div>
+                    <div class="locality-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Armonk, New York</p>
+                    </div>
+                    <div class="type-vaga">
+                        <span class="pj">PJ</span>
+                    </div>
+                </a></li>
+                <li><a href="#" class="clickarea">
+                    <div class="company-box">
+                        <img src="/img/linkedinlogo.png" alt="logo do linkedin">
+                        <div class="info">
+                            <h5>Front End Developer</h5>
+                            <p>Linkedin</p>
+                        </div>
+                    </div>
+                    <div class="locality-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Sunnyvale, California</p>
+                    </div>
+                    <div class="type-vaga">
+                        <span class="home-office">Home Office</span>
+                    </div>
+                </a></li>
+                <li><a href="#" class="clickarea">
+                    <div class="company-box">
+                        <img src="/img/facebooklogo.png" alt="logo do facebook">
+                        <div class="info">
+                        <h5>Full Stack Developer</h5>
+                        <p>Facebook</p>
+                        </div>
+                    </div>
+                    <div class="locality-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Menlo Park, California</p>
+                    </div>
+                    <div class="type-vaga">
+                        <span class="pj">PJ</span>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <a href="#" class="button">
+            Ver mais vagas
+        </a>
+    </div>
+    <section id="send-vagas" class="container-send">
+        <div class="send-vagas">
+         <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#">Enviar vaga</a>
+        </div>
+    </section>
+    <div class="container-wrappler">
+        <div class="wrappler">
+            <h2>Estatísticas do JobFinder</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stats-box">
+                <span>150</span>
+                <p>Vagas abertas</p>
+            </div>
+            <div class="stats-box">
+                <span>250</span>
+                <p>Candidatos contratados</p>
+            </div>
+            <div class="stats-box">
+                <span>50</span>
+                <p>Empresas participantes</p>
+            </div>
+            <div class="stats-box">
+                <span>550</span>
+                <p>Candidatos</p>
+        </div>
+    </div>
+    <section class="testmony-container">
+        <div class="testmony-box">
+            <p class="testmony-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="/img/avatar1.png" alt="Avatar" width="100px">
+            <p class="testmony-name">João</p>
+        </div>
+        <div class="testmony-box">
+            <p class="testmony-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="/img/avatar2.png" alt="Avatar" width="100px">
+            <p class="testmony-name">Maria</p>
+        </div>
+        <div class="testmony-box">
+            <p class="testmony-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="/img/avatar3.png" alt="Avatar" width="100px">
+            <p class="testmony-name">Pedro</p>
+        </div>
+        <div class="testmony-box">
+            <p class="testmony-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="/img/avatar4.png" alt="Avatar" width="100px">
+            <p class="testmony-name">Alexia</p>
+        </div>
+    </section>
+    <div class="container-wrappler">
+        <div id="blog" class="wrappler">
+            <h2>Últimos artigos do nosso blog</h2>
+            <p class="p-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <section class="article-container">
+                <div id="article3" class="article-box">
+                    <img src="/img/blog1.jpg" alt="Blog">
+                    <a href="#">
+                        <h3>Article title</h3>
+                    </a>
+                    <span>05 de Fevereiro de 2019 | 10 comentários</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="button-blg">Ler post</a>
+                </div>
+                <div id="article2" class="article-box">
+                    <img src="/img/blog2.jpg" alt="Blog">
+                    <a href="#">
+                        <h3>Article title</h3>
+                    </a>
+                    <span>05 de Fevereiro de 2019 | 10 comentários</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="button-blg">Ler post</a>
+                </div>
+                <div id="article1" class="article-box">
+                    <img src="/img/blog3.jpg" alt="Blog">
+                    <a href="#">
+                        <h3>Article title</h3>
+                    </a>
+                    <span>05 de Fevereiro de 2019 | 10 comentários</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a class="button-blg">Ler post</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <section class="footer-box">
+            <img src="/img/logo.png" alt="Logo" width="128px">
+            <h2>JobFinder</h2>
+            <p>A maneira mais fácil de encontrar seu próximo emprego.</p>
+        </section>
+        <section class="footer-box">
+            <h2>Artigos rescentes</h2>
+            <a href="#">
+                <p>Como conseguir o primeiro emprego em tempos de crise?</p>
+            </a>
+            <span>05 de fevereiro de 2019</span>
+            <a href="#">
+                <p>Como conseguir o primeiro emprego em tempos de crise?</p>
+            </a>
+            <span>05 de fevereiro de 2019</span>
+            <a href="#">
+                <p>Como conseguir o primeiro emprego em tempos de crise?</p>
+            </a>
+            <span>05 de fevereiro de 2019</span>
+        </section>
+        <section class="footer-box">
+            <h2>Nos encontre nas redes sociais</h2>
+            <a href="#">
+                <p>
+                    <i class="fab fa-facebook-square"></i>
+                    Facebook
+                </p>
+            </a>
+            <a href="#">
+                <p>
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </p>
+            </a>
+            <a href="#">
+                <p>
+                    <i class="fab fa-linkedin"></i>
+                    Linkedin
+                </p>
+            </a>
+        </section>
+    </footer>
+    <div id="footer-bottom" class="footer-bottom">
+        <p>It's R4ul</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
